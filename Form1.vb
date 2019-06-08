@@ -8,7 +8,7 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Call bgm()
     End Sub
 
     Private Sub bgm()
