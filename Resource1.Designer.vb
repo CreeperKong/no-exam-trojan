@@ -65,12 +65,11 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  查找 System.Byte[] 类型的本地化资源。
+        '''  查找类似于 System.IO.MemoryStream 的 System.IO.UnmanagedMemoryStream 类型的本地化资源。
         '''</summary>
-        Friend Shared ReadOnly Property bgm() As Byte()
+        Friend Shared ReadOnly Property bgm() As System.IO.UnmanagedMemoryStream
             Get
-                Dim obj As Object = ResourceManager.GetObject("bgm", resourceCulture)
-                Return CType(obj,Byte())
+                Return ResourceManager.GetStream("bgm", resourceCulture)
             End Get
         End Property
     End Class

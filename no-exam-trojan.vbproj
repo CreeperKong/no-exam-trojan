@@ -149,5 +149,8 @@
   <ItemGroup>
     <None Include="bgm.wma" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bgm.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
